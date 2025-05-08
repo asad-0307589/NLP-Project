@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package grpc_api.generated;
+
+service TextToImageService {
+  rpc GenerateImageFromPrompt (GenerateImageRequest) returns (GenerateImageResponse);
+}
+
+message GenerateImageRequest {
+  string prompt = 1;
+  string model_name = 2;
+  string output_dir = 3;
+  string output_name = 4;
+}
+
+message GenerateImageResponse {
+  string output_path = 1;
+}

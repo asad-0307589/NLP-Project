@@ -1,0 +1,12 @@
+torch==2.2.2+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+diffusers
+transformers
+accelerate
+Pillow
+gradio  # or streamlit
+protobuf
+grpcio
+grpcio-tools
+numpy<2  # 👈 Add this line
